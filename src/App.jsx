@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./styles/App/App.css";
 import SingleCard from "./components/SingleCard";
-import { Howl } from "howler"
+import Header from "./components/Header";
+import { Howl } from "howler";
 
 const cardImages = [
   {"src": "/images/1.png", matched: false},
@@ -41,15 +42,6 @@ function App() {
     })
     sound.play()
   }
-
-  // const autoPlay = () => {
-  //   for(let i = 0; i < cards.length; i++) {
-  //     if(cards[i].matched) {
-  //       soundPlay(audioList[1].sound)
-  //     }
-  //   }
-  // }
-
 
   useEffect(() => {
     shuffleCards();
@@ -91,11 +83,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className="head">
-        <div className="title">Konoha</div>
-        <img src="/images/konohaClan.png" className="clan" alt="clan-symbol"/>
+      <Header />
+      <div className="buttons">
+        <button onClick={shuffleCards}>New Game</button>
+        <button onClick={shuffleCards} disabled="disabled">End Game</button>
       </div>
-      <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">
         {cards.map(card => (

@@ -58,6 +58,15 @@ button :hover {
   height: auto;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .turns {
   font-size: 1.3em;
   letter-spacing: 5px;

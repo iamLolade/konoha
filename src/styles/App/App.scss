@@ -38,6 +38,11 @@ button {
     height: auto;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .turns {
     font-size: $baseFontSize;
     letter-spacing: 5px;
