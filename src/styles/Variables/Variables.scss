@@ -1,0 +1,20 @@
+$baseFont: Poppins;
+$baseFontSize: 1.3em;
+$baseRadius: 4px;
+$baseFontColor: #fff;
+
+@mixin buttonStyle {
+    background: none;
+    border: 2px solid $baseFontColor;
+    margin: 10px auto;
+    padding: 6px 12px;
+    color: $baseFontColor;
+    font-weight: bold;
+    font-size: $baseFontSize;
+    cursor: pointer;
+
+    :hover {
+        background-color: #1b1523;
+        color: $baseFontColor;
+    }
+}

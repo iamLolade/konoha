@@ -1,6 +1,5 @@
 body {
   font-family: Poppins;
-  font-size: 1.5em;
   text-align: center;
   background: #1b1523;
   color: #fff;
@@ -9,10 +8,11 @@ body {
 button {
   background: none;
   border: 2px solid #fff;
+  margin: 10px auto;
   padding: 6px 12px;
   color: #fff;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
   cursor: pointer;
 }
 
@@ -27,7 +27,7 @@ button :hover {
 }
 
 .title {
-  font-size: 2.4em;
+  font-size: 4em;
   font-weight: bold;
 }
 /*# sourceMappingURL=App.css.map */
