@@ -35,7 +35,10 @@ function App() {
 
   return (
     <div className="App">
-      <div className="title">Konoha</div>
+      <div className="head">
+        <div className="title">Konoha</div>
+        <img src="/images/konohaClan.png" className="clan" alt="clan-symbol"/>
+      </div>
       <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">

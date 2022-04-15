@@ -25,3 +25,8 @@ $basePosition: center;
     margin-left: 0;
     padding: 20px;
 }
+
+@mixin image-size {
+    width: 220px;
+    height: 200px;
+}

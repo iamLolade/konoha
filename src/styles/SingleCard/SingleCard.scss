@@ -17,8 +17,7 @@
 }
 
 .back {
-    width: 220px;
-    height: 200px;
+    @include image-size();
 }
 
 @media screen and (max-width: 992px) {

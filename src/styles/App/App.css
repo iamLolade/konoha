@@ -1,7 +1,8 @@
 body {
   font-family: Poppins;
   text-align: center;
-  background: #1b1523;
+  background: url("../../../public/images/redmoon.png") no-repeat fixed;
+  background-size: cover;
   color: #fff;
 }
 
@@ -26,9 +27,24 @@ button :hover {
   width: auto;
 }
 
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .title {
   font-size: 4em;
   font-weight: bold;
+}
+
+.clan {
+  margin-top: -12px;
+  width: 90px;
+  height: auto;
 }
 
 @media screen and (max-width: 992px) {
