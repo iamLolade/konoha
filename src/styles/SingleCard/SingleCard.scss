@@ -1,0 +1,14 @@
+@import "../Variables/Variables.scss";
+
+.card-grid {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.back {
+    width: 220px;
+    height: 200px;
+    border-radius: $baseRadius;
+}

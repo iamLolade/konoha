@@ -1,0 +1,15 @@
+.card-grid {
+  margin: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.back {
+  width: 220px;
+  height: 200px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=SingleCard.css.map */
