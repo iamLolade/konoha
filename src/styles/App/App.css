@@ -12,6 +12,7 @@ button {
   margin: 10px auto;
   padding: 6px 12px;
   color: #fff;
+  border-radius: 4px;
   font-weight: bold;
   font-size: 1.3em;
   cursor: pointer;
@@ -37,7 +38,7 @@ button :hover {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: bold;
 }
 
