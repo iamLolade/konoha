@@ -20,3 +20,15 @@ button {
     font-size: 4em;
     font-weight: bold;
 }
+
+@media screen and (max-width: 992px) {
+    body {
+        text-align: $basePosition;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    body {
+        text-align: $basePosition;
+    }
+}

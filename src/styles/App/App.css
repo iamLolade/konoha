@@ -30,4 +30,16 @@ button :hover {
   font-size: 4em;
   font-weight: bold;
 }
+
+@media screen and (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=App.css.map */

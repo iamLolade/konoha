@@ -2,6 +2,7 @@ $baseFont: Poppins;
 $baseFontSize: 1.3em;
 $baseRadius: 4px;
 $baseFontColor: #fff;
+$basePosition: center;
 
 @mixin buttonStyle {
     background: none;
@@ -17,4 +18,10 @@ $baseFontColor: #fff;
         background-color: #1b1523;
         color: $baseFontColor;
     }
+}
+
+@mixin card-grid {
+    display: grid;
+    margin-left: 0;
+    padding: 20px;
 }

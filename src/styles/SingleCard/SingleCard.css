@@ -5,11 +5,41 @@
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  border-radius: 4px;
 }
 
 .back {
   width: 220px;
   height: 200px;
-  border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-grid {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 0;
+    padding: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-grid {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 0;
+    padding: 20px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 /*# sourceMappingURL=SingleCard.css.map */

@@ -5,10 +5,32 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    text-align: $basePosition;
+}
+
+.card {
+    position: relative;
+}
+
+.card img {
+    border-radius: $baseRadius;
 }
 
 .back {
     width: 220px;
     height: 200px;
-    border-radius: $baseRadius;
+}
+
+@media screen and (max-width: 992px) {
+    .card-grid {
+        @include card-grid();
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .card-grid {
+        @include card-grid();
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
