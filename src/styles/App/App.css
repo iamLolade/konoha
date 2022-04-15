@@ -22,13 +22,22 @@ button :hover {
 }
 
 .App {
-  max-width: 860px;
   margin: 40px auto;
+  width: auto;
 }
 
 .title {
   font-size: 4em;
   font-weight: bold;
+}
+
+.card-grid {
+  margin: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
 .back {
