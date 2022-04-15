@@ -3,16 +3,16 @@ import "./styles/App/App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  {"src": "/images/1.png"},
-  {"src": "/images/2.png"},
-  {"src": "/images/5.png"},
-  {"src": "/images/6.png"},
-  {"src": "/images/9.png"},
-  {"src": "/images/10.png"},
-  {"src": "/images/11.png"},
-  {"src": "/images/12.png"},
-  {"src": "/images/4.png"},
-  {"src": "/images/8.png"}
+  {"src": "/images/1.png", matched: false},
+  {"src": "/images/2.png", matched: false},
+  {"src": "/images/5.png", matched: false},
+  {"src": "/images/6.png", matched: false},
+  {"src": "/images/9.png", matched: false},
+  {"src": "/images/10.png", matched: false},
+  {"src": "/images/11.png", matched: false},
+  {"src": "/images/12.png", matched: false},
+  {"src": "/images/4.png", matched: false},
+  {"src": "/images/8.png", matched: false}
 ];
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
     if(firstSelection && secondSelection) {
 
       if(firstSelection.src === secondSelection.src) {
-        console.log("Matched")
+        
         resetTurn();
       } else {
         console.log("Not matched")
