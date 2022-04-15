@@ -1,11 +1,11 @@
 .card-grid {
-  margin: 40px;
+  margin: 45px;
   margin-bottom: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 30px;
   text-align: center;
 }
 
@@ -25,17 +25,30 @@
 .card .front {
   -webkit-transform: rotateY(90deg);
           transform: rotateY(90deg);
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
   position: absolute;
 }
 
 .flipped .front {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.card .back {
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .flipped .back {
   -webkit-transform: rotateY(90deg);
           transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 @media screen and (max-width: 992px) {
