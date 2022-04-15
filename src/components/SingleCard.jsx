@@ -1,6 +1,6 @@
 import "../styles/SingleCard/SingleCard.css"
 
-const SingleCard = ({ card, handleSelection }) => {
+const SingleCard = ({ card, handleSelection, flipped }) => {
 
     const handleClick = () => {
         handleSelection(card)
@@ -8,7 +8,7 @@ const SingleCard = ({ card, handleSelection }) => {
 
     return (  
         <div className="card">
-            <div>
+            <div className={flipped ? "flipped" : ""}>
               <img src={card.src} alt="card front" className="front"/>
               <img 
                 src="/images/cover.png"

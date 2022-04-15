@@ -4,15 +4,11 @@ import SingleCard from "./components/SingleCard";
 
 const cardImages = [
   {"src": "/images/1.png", matched: false},
-  {"src": "/images/2.png", matched: false},
-  {"src": "/images/5.png", matched: false},
+  {"src": "/images/3.png", matched: false},
   {"src": "/images/6.png", matched: false},
   {"src": "/images/9.png", matched: false},
   {"src": "/images/10.png", matched: false},
-  {"src": "/images/11.png", matched: false},
-  {"src": "/images/12.png", matched: false},
-  {"src": "/images/4.png", matched: false},
-  {"src": "/images/8.png", matched: false}
+  {"src": "/images/11.png", matched: false}
 ];
 
 function App() {
@@ -42,10 +38,10 @@ function App() {
             }
           })
         })
-        resetTurn();
+        setTimeout(() => resetTurn(), 1000);
       } else {
         
-        resetTurn();
+        setTimeout(() => resetTurn(), 1000);
       }
     }
   }, [firstSelection, secondSelection])
@@ -75,6 +71,7 @@ function App() {
             card={card}
             key={card.id}
             handleSelection={handleSelection}
+            flipped={card.matched || card === firstSelection || card === secondSelection}
           />
         ))}
       </div>

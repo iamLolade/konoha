@@ -1,9 +1,10 @@
 .card-grid {
-  margin: 100px;
+  margin: 40px;
+  margin-bottom: 100px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   text-align: center;
 }
@@ -19,6 +20,22 @@
 .back {
   width: 210px;
   height: 200px;
+}
+
+.card .front {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  position: absolute;
+}
+
+.flipped .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flipped .back {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
 }
 
 @media screen and (max-width: 992px) {

@@ -1,11 +1,15 @@
 @import "../Variables/Variables.scss";
 
 body {
+    display: flex;
+    justify-content: space-evenly;
     font-family: $baseFont;
     text-align: center;
-    background: url("../../../public/images/itachi.png") no-repeat fixed;
+    background: url("../../../public/images/redmoon.png") no-repeat fixed;
     background-size: cover;
     color: $baseFontColor;
+    width: 100%;
+    height: auto;
 }
 
 button {

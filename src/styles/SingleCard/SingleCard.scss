@@ -1,9 +1,10 @@
 @import "../Variables/Variables.scss";
 
 .card-grid {
-    margin: 100px;
+    margin: 40px;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     text-align: $basePosition;
 }
@@ -18,6 +19,19 @@
 
 .back {
     @include image-size();
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
 }
 
 @media screen and (max-width: 992px) {
