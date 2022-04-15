@@ -13,11 +13,14 @@ const cardImages = [
   {"src": "/images/8.png"}
 ];
 
-const shuffleCards = () => {
-
-};
-
 function App() {
+
+  const shuffleCards = () => {
+    const shuffledCards = [...cardImages, ...cardImages].sort(() => Math.random() - 0.5)
+      .map((card) => ({ ...card, id: Math.random() }))
+
+  };
+
   return (
     <div className="App">
       <div className="title">Konoha</div>
