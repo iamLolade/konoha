@@ -1,0 +1,37 @@
+$baseFont: Poppins;
+$baseFontColor: #fff;
+$baseFontSize: 1.5em;
+$baseRadius: 4px;
+
+body {
+    font-family: $baseFont;
+    font-size: $baseFontSize;
+    text-align: center;
+    background: #1b1523;
+    color: $baseFontColor;
+}
+
+button {
+    background: none;
+    border: 2px solid $baseFontColor;
+    padding: 6px 12px;
+    color: $baseFontColor;
+    font-weight: bold;
+    font-size: $baseFontSize;
+    cursor: pointer;
+    
+    :hover {
+        background-color: #1b1523;
+        color: $baseFontColor;
+    }
+}
+
+.App {
+    max-width: 860px;
+    margin: 40px auto;
+}
+
+.title {
+    font-size: 2.4em;
+    font-weight: bold;
+}
