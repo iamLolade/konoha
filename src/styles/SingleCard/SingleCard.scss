@@ -2,7 +2,6 @@
 
 .card-grid {
     margin: 45px;
-    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -11,6 +10,7 @@
 
 .card {
     position: relative;
+    cursor: pointer;
 }
 
 .card img {
@@ -35,6 +35,10 @@
 .card .back {
     transition: all ease-in 0.2s;
     transition-delay: 0.2s;
+    :hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
 }
 
 .flipped .back {

@@ -1,9 +1,11 @@
 import "../styles/SingleCard/SingleCard.css"
 
-const SingleCard = ({ card, handleSelection, flipped }) => {
+const SingleCard = ({ card, handleSelection, flipped, disabled }) => {
 
     const handleClick = () => {
-        handleSelection(card)
+        if(!disabled) {
+            handleSelection(card)
+        }
     };
 
     return (  

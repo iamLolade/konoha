@@ -1,6 +1,5 @@
 .card-grid {
   margin: 45px;
-  margin-bottom: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -11,6 +10,7 @@
 
 .card {
   position: relative;
+  cursor: pointer;
 }
 
 .card img {
@@ -42,6 +42,13 @@
   transition: all ease-in 0.2s;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
+}
+
+.card .back :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .flipped .back {

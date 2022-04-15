@@ -38,6 +38,11 @@ button {
     height: auto;
 }
 
+.turns {
+    font-size: $baseFontSize;
+    letter-spacing: 5px;
+}
+
 @media screen and (max-width: 992px) {
     body {
         text-align: $basePosition;

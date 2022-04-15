@@ -58,6 +58,11 @@ button :hover {
   height: auto;
 }
 
+.turns {
+  font-size: 1.3em;
+  letter-spacing: 5px;
+}
+
 @media screen and (max-width: 992px) {
   body {
     text-align: center;
