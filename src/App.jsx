@@ -30,7 +30,7 @@ function App() {
   };
   
   const handleSelection = (card) => {
-    console.log(card)
+    firstSelection ? setSecondSelection(card) : setFirstSelection(card);
   }
 
   return (
