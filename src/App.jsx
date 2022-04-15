@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./styles/App/App.css";
 import SingleCard from "./components/SingleCard";
+import { Howl } from "howler"
 
 const cardImages = [
   {"src": "/images/1.png", matched: false},
@@ -18,6 +19,11 @@ function App() {
   const [secondSelection, setSecondSelection] = useState(null);
   const [disabled, setDisabled] = useState(false)
 
+  const audioList = [
+    {sound: "/audio/intro.mp3", label: "intro", id: 1},
+    {sound: "/audio/rasengaan.mp3", label: "intro", id: 4}
+  ];
+
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages].sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }))
@@ -25,7 +31,25 @@ function App() {
     setSecondSelection(null);
     setCards(shuffledCards)
     setTurns(0)
+    soundPlay(audioList[0].sound)
   };
+
+  const soundPlay = (src) => {
+    const sound = new Howl({
+      src,
+      html5: true
+    })
+    sound.play()
+  }
+
+  // const autoPlay = () => {
+  //   for(let i = 0; i < cards.length; i++) {
+  //     if(cards[i].matched) {
+  //       soundPlay(audioList[1].sound)
+  //     }
+  //   }
+  // }
+
 
   useEffect(() => {
     shuffleCards();
@@ -38,6 +62,7 @@ function App() {
         setCards(prevCards => {
           return prevCards.map(card => {
             if(card.src === firstSelection.src) {
+              soundPlay(audioList[1].sound)
               return {...card, matched: true}
             } else {
               return card
