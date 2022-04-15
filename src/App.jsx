@@ -33,18 +33,26 @@ function App() {
     if(firstSelection && secondSelection) {
 
       if(firstSelection.src === secondSelection.src) {
-        
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if(card.src === firstSelection.src) {
+              return {...card, matched: true}
+            } else {
+              return card
+            }
+          })
+        })
         resetTurn();
       } else {
-        console.log("Not matched")
+        
         resetTurn();
       }
     }
   }, [firstSelection, secondSelection])
 
+  console.log(cards)
   const handleSelection = (card) => {
     firstSelection ? setSecondSelection(card) : setFirstSelection(card);
-    console.log(firstSelection, secondSelection)
   }
 
   const resetTurn = () => {
