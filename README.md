@@ -4,7 +4,7 @@
 ### Memory game of the famour anime "Naruto".
 #### Players have to match all duplicates to complete the game
 
-![Screenshot](/images/preview.png)
+![Screenshot](images/preview.png)
 
 ## Available Scripts
 
