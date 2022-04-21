@@ -86,7 +86,6 @@ function App() {
       <Header />
       <div className="buttons">
         <button onClick={shuffleCards}>New Game</button>
-        <button onClick={shuffleCards} disabled="disabled">End Game</button>
       </div>
 
       <div className="card-grid">
