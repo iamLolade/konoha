@@ -1,5 +1,5 @@
 .card-grid {
-  margin: 45px;
+  margin: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -18,8 +18,8 @@
 }
 
 .back {
-  width: 210px;
-  height: 200px;
+  width: 160px;
+  height: 150px;
 }
 
 .card .front {
@@ -64,6 +64,7 @@
     display: grid;
     margin-left: 0;
     padding: 20px;
+    margin-top: -150px;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
@@ -75,6 +76,7 @@
     display: grid;
     margin-left: 0;
     padding: 20px;
+    margin-top: -150px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }

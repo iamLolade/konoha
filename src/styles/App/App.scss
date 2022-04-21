@@ -19,11 +19,13 @@ button {
 .App {
     margin: 40px auto;
     width: auto;
+    height: 100vh;
 }
 
 .head {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 .title {
     font-family: 'Babylonica';

@@ -25,9 +25,10 @@ $basePosition: center;
     display: grid;
     margin-left: 0;
     padding: 20px;
+    margin-top: -150px;
 }
 
 @mixin image-size {
-    width: 210px;
-    height: 200px;
+    width: 160px;
+    height: 150px;
 }

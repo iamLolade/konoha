@@ -34,6 +34,7 @@ button :hover {
 .App {
   margin: 40px auto;
   width: auto;
+  height: 100vh;
 }
 
 .head {
@@ -43,6 +44,7 @@ button :hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
 }
 
 .title {
