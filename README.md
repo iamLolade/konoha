@@ -1,10 +1,9 @@
 # Konoha - Memory Game
 
+### Memory game of the famous anime "Naruto".
+#### Match all duplicate characters to complete the game
 
-### Memory game of the famour anime "Naruto".
-#### Players have to match all duplicates to complete the game
-
-![Screenshot](images/preview.png)
+![Screenshot](/public/images/preview.png)
 
 ## Available Scripts
 
